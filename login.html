@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Registration - Food Rescue Platform</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food-listing.html">Food Listing</a></li>
+                <li><a href="search-donations.html">Search Donations</a></li>
+                <li><a href="pickup-delivery.html">Pickup & Delivery</a></li>
+                <li><a href="safety-guidelines.html">Safety Guidelines</a></li>
+                <li><a href="impact-dashboard.html">Impact Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="login_container">
+        <header class="fade-in">
+            <h1 id="login_h1">Log in</h1>
+        </header>
+
+        <main>
+            <form class="fade-in" id="signupForm" id="login_form" >
+
+                <label id="login_label" for="email">Email:</label>
+                <input id="login_input" type="email" id="email" name="email" required>
+
+                <label id="login_label" for="password">Password:</label>
+                <input id="login_input" type="password" id="password" name="password" minlength="6" maxlength="16" required>
+
+                <button id="login_button" type="submit" class="btn">Login</button>
+                <button id="login_button" type="button"><a href="forgot_password.html">Forgot Password?</a></button>
+                <button id="login_button" type="button"><a href="donor-registration.html">You don't have an account?</a></button>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <div class="nav_container">
+            <p>&copy; 2025 Food Rescue Platform. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="password.js"></script>
+</body>
+</html>
+

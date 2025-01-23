@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Dashboard - Food Rescue Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .stat-card {
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .stat-card h3 {
+            margin-bottom: 10px;
+        }
+        .stat-card .number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food-listing.html">Food Listing</a></li>
+                <li><a href="search-donations.html">Search Donations</a></li>
+                <li><a href="pickup-delivery.html">Pickup & Delivery</a></li>
+                <li><a href="safety-guidelines.html">Safety Guidelines</a></li>
+                <li><a href="impact-dashboard.html">Impact Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="fade-in">
+            <h1>Impact Dashboard</h1>
+            <p>See the difference we're making together in our community.</p>
+        </header>
+
+        <main>
+            <section class="dashboard fade-in">
+                <div class="stat-card">
+                    <h3>Total Food Rescued</h3>
+                    <p class="number">0</p>
+                    <p>kg</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Meals Provided</h3>
+                    <p class="number">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Active Donors</h3>
+                    <p class="number">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Recipient Organizations</h3>
+                    <p class="number">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Volunteers</h3>
+                    <p class="number">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>CO2 Emissions Saved</h3>
+                    <p class="number">0</p>
+                    <p>tons</p>
+                </div>
+            </section>
+
+            <section class="fade-in">
+                <h2>Recent Activity</h2>
+                <ul>
+                    <li>Restaurant A donated 0kg of fresh produce.</li>
+                    <li>Shelter B received 0 meals.</li>
+                    <li>Volunteer C completed 0 deliveries this week.</li>
+                    <li>Food Bank D joined as a new recipient.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Food Rescue Platform. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

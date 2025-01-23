@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickup & Delivery - Food Rescue Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .delivery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .delivery-card {
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food-listing.html">Food Listing</a></li>
+                <li><a href="search-donations.html">Search Donations</a></li>
+                <li><a href="pickup-delivery.html">Pickup & Delivery</a></li>
+                <li><a href="safety-guidelines.html">Safety Guidelines</a></li>
+                <li><a href="impact-dashboard.html">Impact Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="fade-in">
+            <cut_off_point>
+    </div>
+    </nav>
+
+    <div class="container">
+        <header class="fade-in">
+            </cut_off_point>
+
+            <h1>Pickup & Delivery</h1>
+            <p>Coordinate food pickups and deliveries to ensure donations reach those in need.</p>
+        </header>
+
+        <main>
+            <section class="fade-in">
+                <h2>Schedule a Pickup/Delivery</h2>
+                <form>
+                    <label for="donation-id">Donation ID:</label>
+                    <input type="text" id="donation-id" name="donation-id" required>
+
+                    <label for="pickup-date">Pickup Date:</label>
+                    <input type="date" id="pickup-date" name="pickup-date" required>
+
+                    <label for="pickup-time">Pickup Time:</label>
+                    <input type="time" id="pickup-time" name="pickup-time" required>
+
+                    <label for="delivery-date">Delivery Date:</label>
+                    <input type="date" id="delivery-date" name="delivery-date" required>
+
+                    <label for="delivery-time">Delivery Time:</label>
+                    <input type="time" id="delivery-time" name="delivery-time" required>
+                    <br>
+
+                    <label for="notes">Special Instructions:</label>
+                    <textarea id="notes" name="notes"></textarea>
+
+                    <button type="submit" class="btn">Schedule</button>
+                </form>
+            </section>
+
+            <section class="fade-in">
+                <h2>Upcoming Pickups/Deliveries</h2>
+                <div class="delivery-grid">
+                    <div class="delivery-card">
+                        <h3>Pickup #1234</h3>
+                        <p><strong>Donor:</strong> Local Restaurant</p>
+                        <p><strong>Pickup:</strong> 2025-01-24 14:00</p>
+                        <p><strong>Delivery:</strong> 2025-05-24 15:30</p>
+                        <p><strong>Status:</strong> In Progress</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                    <div class="delivery-card">
+                        <h3>Pickup #1235</h3>
+                        <p><strong>Donor:</strong> Grocery Store A</p>
+                        <p><strong>Pickup:</strong> 2025-01-24 19:00</p>
+                        <p><strong>Delivery:</strong> 2025-01-24 20:30</p>
+                        <p><strong>Status:</strong> Scheduled</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                    <div class="delivery-card">
+                        <h3>Pickup #1236</h3>
+                        <p><strong>Donor:</strong> Bakery B</p>
+                        <p><strong>Pickup:</strong> 2025-01-25 08:00</p>
+                        <p><strong>Delivery:</strong> 2025-01-25 09:30</p>
+                        <p><strong>Status:</strong> Scheduled</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Food Rescue Platform. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
