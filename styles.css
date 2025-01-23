@@ -1,155 +1,200 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333333;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-    border: border-box;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  border: border-box;
+}
+
+/* Navigation */
+nav {
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 0px 0;
+  height: 80px;
+  display: flex;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffa000;
+}
+
+/* Hero-Section or Intro Section of Webpage. */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.hero-section {
+  text-align: center;
+  background-image: url("istockphoto-1144580882-612x612\ 2.jpg");
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#welcome {
+  color: #17530d;
+  background-color: #f5f5f5;
+  font-size: xxx-large;
+  padding: 10px;
+}
+
+#motive {
+  width: auto;
+  font-size: large;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+
+
+/* Headings */
+h1,
+h2,
+h3 {
+  color: #4caf50;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #4caf50;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background: #45a049;
+}
+
+/* Forms */
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+/*Food Listing*/
+.food-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.food-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.food-details {
+  flex-grow: 1;
+}
+
+/* Search-Donations */
+.search-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.donation-card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.donation-card h3 {
+  margin-top: 0;
+}
+
+
+
+/* Cards */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 20px;
+    width: 95%;
   }
-
-  .hero-section{
-    text-align: center;
-    background-image: url("istockphoto-1144580882-612x612\ 2.jpg");
-    height: 450px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
-  #welcome{
-    color: #17530d;
-    background-color: #f5f5f5;
-    font-size: xxx-large;
-    padding: 10px;
-  }
-
-  #motive {
-    width: auto; 
-    font-size: large;
-    background-color: #f5f5f5;
-    text-align: center; 
+footer {
+  text-align: center;
 }
-
-
-  /* Navigation */
-  nav {
-    background-color: #4caf50;
-    color: #ffffff;
-    padding: 0px 0;
-    height: 80px;
-    display: flex;
-  }
-  
-  nav ul {
-    padding: 0;
-    list-style: none;
-  }
-  
-  nav li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #ffa000;
-  }
-  
-  /* Headings */
-  h1,
-  h2,
-  h3 {
-    color: #4caf50;
-  }
-  
-  /* Buttons */
-  .btn {
-    display: inline-block;
-    background: #4caf50;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background: #45a049;
-  }
-  
-  /* Forms */
-  form {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  textarea,
-  select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  /* Cards */
-  .card {
-    background: #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .fade-in {
-    animation: fadeIn 1s ease-in;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .container {
-      width: 95%;
-    }
-  }
-
-  footer{
-    text-align: center;
-  }
-  
-  

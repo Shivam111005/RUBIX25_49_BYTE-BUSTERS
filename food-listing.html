@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Listing - Food Rescue Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food-listing.html">Food Listing</a></li>
+                <li><a href="search-donations.html">Search Donations</a></li>
+                <li><a href="pickup-delivery.html">Pickup & Delivery</a></li>
+                <li><a href="safety-guidelines.html">Safety Guidelines</a></li>
+                <li><a href="impact-dashboard.html">Impact Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="fade-in">
+            <h1>Food Listing</h1>
+            <p>List your available food donations or browse current listings.</p>
+        </header>
+
+        <main>
+            <section class="fade-in">
+                <h2>Add New Food Listing</h2>
+                <form>
+                    <label for="food-name">Food Name:</label>
+                    <input type="text" id="food-name" name="food-name" required>
+                    <br>
+                    <label for="quantity">Quantity:</label>
+                    <input type="text" id="quantity" name="quantity" required>
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required
+                        placeholder="Mention manufacture date, ingredient and etc."></textarea>
+                    <br>
+                    <label for="expiration">Expiration Date:</label>
+                    <input type="date" id="expiration" name="expiration" required>
+                    <br>
+
+
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+
+                    <button type="submit" class="btn">Add Listing</button>
+                </form>
+            </section>
+
+            <section class="fade-in">
+                <h2>Current Food Listings</h2>
+                <div class="food-item card">
+                    <img src="vegetables.jpg" alt="Fresh Vegetables">
+                    <div class="food-details">
+                        <h3>Fresh Vegetables</h3>
+                        <p>Quantity: 10 kg</p>
+                        <p>Expiration: 2025-05-25</p>
+                        <p>Description: Assorted fresh vegetables including carrots, lettuce, and tomatoes.</p>
+                        <a href="#" class="btn">Request</a>
+                    </div>
+                </div>
+                <div class="food-item card">
+                    <img src="Canned-Food-1-1-300x169.jpg" alt="Canned Goods">
+                    <div class="food-details">
+                        <h3>Canned Goods</h3>
+                        <p>Quantity: 50 cans</p>
+                        <p>Expiration: 2025-12-31</p>
+                        <p>Description: Assorted canned goods including sweets, ready-made curry, and soup.</p>
+                        <a href="#" class="btn">Request</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Food Rescue Platform. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

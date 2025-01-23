@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Donations - Food Rescue Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food-listing.html">Food Listing</a></li>
+                <li><a href="search-donations.html">Search Donations</a></li>
+                <li><a href="pickup-delivery.html">Pickup & Delivery</a></li>
+                <li><a href="safety-guidelines.html">Safety Guidelines</a></li>
+                <li><a href="impact-dashboard.html">Impact Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="fade-in">
+            <h1>Search Donations</h1>
+            <p>Find available food donations in your area.</p>
+        </header>
+
+        <main>
+            <section class="fade-in">
+                <h2>Search Filters</h2>
+                <form>
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" placeholder="Enter city or zip code">
+
+                    <label for="food-type">Food Type:</label>
+                    <select id="food-type" name="food-type">
+                        <option value="">All Types</option>
+                        <option value="produce">Fresh Produce</option>
+                        <option value="dairy">Dairy</option>
+                        <option value="bakery">Bakery</option>
+                        <option value="canned">Canned Goods</option>
+                        <option value="prepared">Prepared Meals</option>
+                    </select>
+
+                    <label for="urgency">Urgency:</label>
+                    <select id="urgency" name="urgency">
+                        <option value="">Any</option>
+                        <option value="high">High (Expires within 24 hours)</option>
+                        <option value="medium">Medium (Expires within 3 days)</option>
+                        <option value="low">Low (Expires after 3 days)</option>
+                    </select>
+
+                    <button type="submit" class="btn">Search</button>
+                </form>
+            </section>
+
+            <section class="fade-in">
+                <h2>Search Results</h2>
+                <div class="search-results">
+                    <div class="donation-card">
+                        <h3>Fresh Vegetables</h3>
+                        <p><strong>Donor:</strong> Local Farm Market</p>
+                        <p><strong>Quantity:</strong> 20 kg</p>
+                        <p><strong>Expiration:</strong> 2025-01-27</p>
+                        <p><strong>Location:</strong> Hill Road</p>
+                        <a href="#" class="btn">Request Donation</a>
+                    </div>
+                    <div class="donation-card">
+                        <h3>Bread and Pastries</h3>
+                        <p><strong>Donor:</strong> Mooche! Cafe</p>
+                        <p><strong>Quantity:</strong> 50 items</p>
+                        <p><strong>Expiration:</strong> 2025-03-25</p>
+                        <p><strong>Location:</strong> Linking Road</p>
+                        <a href="#" class="btn">Request Donation</a>
+                    </div>
+                    <div class="donation-card">
+                        <h3>Canned Soup</h3>
+                        <p><strong>Donor:</strong> Grocery Store </p>
+                        <p><strong>Quantity:</strong> 100 cans</p>
+                        <p><strong>Expiration:</strong> 2026-02-17</p>
+                        <p><strong>Location:</strong> Pali Road</p>
+                        <a href="#" class="btn">Request Donation</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Food Rescue Platform. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Registration - Food Rescue Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food-listing.html">Food Listing</a></li>
+                <li><a href="search-donations.html">Search Donations</a></li>
+                <li><a href="pickup-delivery.html">Pickup & Delivery</a></li>
+                <li><a href="safety-guidelines.html">Safety Guidelines</a></li>
+                <li><a href="impact-dashboard.html">Impact Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="fade-in">
+            <h1>Registration</h1>
+            <p>Join our community of food donors and make a difference in fighting hunger and reducing waste.</p>
+        </header>
+
+        <main>
+            <form class="fade-in" id="signupForm">
+                <h2>Register:-</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" minlength="10" maxlength="10" required>
+
+                <label for="organization">Role:</label>
+                <select id="organization" name="Role">
+                    <option value="Donor">Donor</option>
+                    <option value="Recipient">Recipient</option>
+                    <option value="Volunteer">Volunteer</option>
+                </select>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="6" maxlength="16" required>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <div class="error" id="errorMessage"></div>
+
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Food Rescue Platform. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="password.js"></script>
+</body>
+</html>
+
