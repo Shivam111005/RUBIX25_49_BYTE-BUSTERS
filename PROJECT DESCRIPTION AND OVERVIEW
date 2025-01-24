@@ -2,3 +2,58 @@
 RUBIX Hackathon 2025 project:
 TEAM NAME: BYTE BUSTERS
 TEAM MEMBERS: ANIMESH,ASMIT,PRATHAM,SHIVAM
+TOPIC : Food Rescue Platform
+Project Overview:
+The Food Rescue Platform is a web-based solution aimed at tackling food wastage and hunger by connecting food donors (e.g., restaurants, households, suppliers) 
+with recipients (e.g., shelters, food banks, charities). It fosters community collaboration to rescue surplus food, reduce waste, and provide nutritious meals 
+to those in need. By leveraging technology, the platform enables efficient coordination of food donations and promotes sustainable practices to combat food 
+insecurity.
+
+Key Features:
+
+1. Donor & Recipient Registration
+A simple registration process for food donors and recipients, making it easy for both parties to connect and participate in food rescue efforts.
+
+2. Food Listing & Availability
+Donors can list available food in real-time, including descriptions, quantities, and expiration dates. Recipients can search and filter donations based on 
+location, food type, and urgency.
+
+
+4. Pickup & Delivery Coordination
+Integration of logistics to facilitate the pickup and delivery of donations through volunteers or partnerships with delivery services, ensuring timely and 
+efficient food distribution.
+
+
+5. Verification & Safety Guidelines
+A robust system to ensure food quality and safety, providing clear guidelines on expiration checks, proper packaging, and safe food handling practices.
+
+
+6. Impact Tracker & Reporting
+A dashboard showcasing key metrics such as the total food rescued, recipients served, and the environmental and social impact of the platform, fostering 
+transparency and motivation among users.
+
+
+7. Volunteer Opportunities
+A feature that allows users to volunteer in food rescue operations, such as food pickup, delivery, or sorting at recipient locations, promoting active 
+community participation.
+
+
+
+Purpose and Vision:
+
+This platform aims to address two critical global challenges: food wastage and hunger. By facilitating the efficient redistribution of surplus food, it 
+reduces waste and helps nourish those in need. The project embodies sustainability, community involvement, and the spirit of giving, ensuring that no 
+edible food goes to waste while helping vulnerable populations.
+
+Technical Highlights:
+
+Developed as a responsive webpage with user-friendly interfaces for donors, recipients, and volunteers.
+
+Real-time food listing and availability tracking.
+
+Secure database for user registrations, food data, and impact reporting.
+
+Scalability to accommodate a growing network of users and partnershipS
+
+This repository contains all the code, assets, and documentation required to run and manage the Food Rescue Platform. We hope this initiative will inspire
+collaboration and innovation to create a meaningful impact in society.
